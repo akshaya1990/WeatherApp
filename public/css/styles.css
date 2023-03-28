@@ -1,0 +1,24 @@
+body{
+    text-align: center;
+    font-family: 'Montserrat',sans-serif;
+    background-color: #264e70;
+}
+
+.go{
+    margin-bottom: 300px;
+}  
+
+.city{
+    margin-bottom: 20px;
+    color: #fcfafa;
+} 
+
+.container-one{
+    color: #fcfafa;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.copyrights-msg{
+    color: #fcfafa;
+}
