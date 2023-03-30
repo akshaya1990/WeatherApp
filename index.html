@@ -4,21 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="css/styles.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&family=Sacramento&family=Ubuntu:wght@300&display=swap" rel="stylesheet"><body>
-   
     <title>Weather App</title>
 </head>
 <body>
-    <div class="container-fluid mx-auto container-one" style="width: 200px;">
+    <div class="container-fluid mx-auto container-one btn-group" style="width: 200px;">
         <h1 class="fs-1">Vaanilai</h1>
     </div>
     <div class="container-fluid mx-auto" style="width: 200px;">
     <form action="/" method="post">
-    <label for="cityInput" class="fs-3 city">Enter City Name</label>
+    <label for="cityInput" class="fs-5 city">Enter City Name</label>
     <input class="form-control form-control-sm boxes city" type="text" placeholder="Chennai" aria-label=".form-control-sm example" id="cityInput" name="cityName">
     <button type="submit" class="btn btn-secondary go" data-bs-toggle="tooltip" data-bs-placement="top" title="Temperature is displayed in °C">Go</button>
     </form>
