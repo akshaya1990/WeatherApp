@@ -4,6 +4,7 @@ const bodyParser = require('body-parser');
 const app = express();
 
 app.use(express.static('public'));
+app.use('/css', express.static(__dirname + '/node_modules/bootstrap/dist/css'))
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
