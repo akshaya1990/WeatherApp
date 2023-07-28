@@ -10,6 +10,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.listen(3000);
 
+console.log("Hello app.js");
 app.get('/', function(req, res) {
     res.sendFile(__dirname + '/index.html');
 });
