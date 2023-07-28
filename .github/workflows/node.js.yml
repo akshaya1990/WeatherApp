@@ -25,12 +25,23 @@ jobs:
 
     - name: build and run test
       run: npm test
-    
+
+    - name: Run linters
+      uses: wearerequired/lint-action@v2
+      with:
+        eslint: true
+  
     - name: Build and push docker image
       uses: mr-smithers-excellent/docker-build-push@v6
       with:
-        image: akshaya90/akshaya-personal-repo
-        tags: v1, latest
-        registry: docker.io
-        username: ${{ secrets.DOCKER_USERNAME }}
-        password: ${{ secrets.DOCKER_PASSWORD }}
+          image: akshaya90/akshaya-personal-repo
+          tags: v1, latest
+          registry: docker.io
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+        
+        
+        
+        
+        
+        
