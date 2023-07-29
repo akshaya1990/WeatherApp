@@ -10,7 +10,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.listen(3000);
 
-console.log("Hello app.js");
 app.get('/', function(req, res) {
     res.sendFile(__dirname + '/index.html');
 });
@@ -22,8 +21,7 @@ app.post('/', function(req, res){
     const apiKey = "77f817c2bd435181acc699cb7c0e6344";
     const unit = "metric";
     const url = "https://api.openweathermap.org/data/2.5/weather?q=" + query + ",us&appid=" + apiKey+ "&units=" + unit;
-    // const zipcodeUrl = "https://api.openweathermap.org/data/2.5/weather?zip=" + zip + "&units=" + units + "&APPID=" + apiKey;
-   
+    //const zipcodeUrl = "https://api.openweathermap.org/data/2.5/weather?zip=" + zip + "&units=" + units + "&APPID=" + apiKey;
     https.get(url, function (response) {
         console.log(response.statusCode);
        
